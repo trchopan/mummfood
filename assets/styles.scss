@@ -1,0 +1,13 @@
+// View breakpoint
+$breakpoint-xl: 1441px;
+$breakpoint-lg: 1024px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 320px;
+
+$primary-color: #bb7721;
+
+@mixin background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+}
