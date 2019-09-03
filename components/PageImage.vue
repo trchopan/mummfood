@@ -3,7 +3,14 @@
     <div class="page-image__background">
       <ImageSrcSet :src="props.document.img" class="img" />
     </div>
-    <h2 v-if="props.document.title" v-html="props.document.title"></h2>
+    <div class="page-image__text">
+      <h2 v-if="props.document.title" data-aos="fade-up" data-aos-offset="300">
+        <template v-if="Array.isArray(props.document.title)">
+          <span v-for="s in props.document.title">{{ s }} </span>
+        </template>
+        <template v-else>{{ props.document.title }}</template>
+      </h2>
+    </div>
   </div>
 </template>
 
@@ -26,27 +33,24 @@
       }
     }
   }
-  h2 {
-    background: grey;
+  .page-image__text {
     position: absolute;
     top: 50%;
-    left: 50%;
     width: 100%;
+  }
+  h2 {
+    background: grey;
     text-align: center;
     color: white;
     font-size: 4rem;
     font-weight: 300;
     max-width: 55rem;
     padding: 1rem;
-    transform: translate(-50%, -50%);
     @media (max-width: $breakpoint-md) {
       font-size: 2.5rem;
     }
     span {
-      display: inline-block;
-      @media (max-width: $breakpoint-sm) {
-        display: block;
-      }
+      display: block;
     }
   }
 }

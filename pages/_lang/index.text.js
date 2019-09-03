@@ -32,8 +32,8 @@ export default [
     img: "/leaves.png",
     title: "MÓN ĂN TƯƠI SẠCH GIAO TẬN NƠI",
     body: [
-      `Chúng tôi giao hàng tại (khu vực). Ghé thăm cửa hàng trực tuyến của
-      chúng tôi để tìm hiểu thêm và đặt hàng.`
+      `Chúng tôi giao hàng tại khu vực Thanh Xuân, Hà Nội. Ghé thăm cửa hàng
+      của chúng tôi để tìm hiểu thêm hoăc đặt hàng qua Facebook.`
     ]
   },
   { type: "link", text: "ĐẶT HÀNG NGAY", to: "/contact" },
@@ -45,23 +45,23 @@ export default [
   {
     type: "img-list",
     list: [
-      { link: "http://lorempixel.com/400/300/food/1" },
-      { link: "http://lorempixel.com/400/300/food/2" },
-      { link: "http://lorempixel.com/400/300/food/3" },
-      { link: "http://lorempixel.com/400/300/food/4" },
-      { link: "http://lorempixel.com/400/300/food/5" },
-      { link: "http://lorempixel.com/400/300/food/6" },
-      { link: "http://lorempixel.com/400/300/food/7" },
-      { link: "http://lorempixel.com/400/300/food/8" },
-      { link: "http://lorempixel.com/400/300/food/9" },
-      { link: "http://lorempixel.com/400/300/food/10" },
-      { link: "http://lorempixel.com/400/300/food/1" },
-      { link: "http://lorempixel.com/400/300/food/2" }
+      { link: "/img/0.jpg" },
+      { link: "/img/1.jpg" },
+      { link: "/img/2.jpg" },
+      { link: "/img/3.jpg" },
+      { link: "/img/4.jpg" },
+      { link: "/img/5.jpg" },
+      { link: "/img/6.jpg" },
+      { link: "/img/7.jpg" },
+      { link: "/img/8.jpg" },
+      { link: "/img/9.jpg" },
+      { link: "/img/10.jpg" },
+      { link: "/img/11.jpg" }
     ]
   },
   {
     type: "page-image",
-    title: "CHUYÊN NGHIỆP VÀ TẬN TÂM",
+    title: ["CHUYÊN NGHIỆP", "VÀ TẬN TÂM"],
     img: "/img/background-4.jpg"
   },
   {
@@ -76,7 +76,9 @@ export default [
   {
     type: "end-text",
     body: [
-      `Cửa hàng của chúng tôi nằm trong (địa phương) ở trung tâm (khu vực).`,
+      `Cửa hàng của chúng tôi nằm tại 153 Hoàng Văn Thái, Thanh Xuân, Hà Nội.`,
+      `Số hotline: <a href="tel:+84977399609">0977 399 609<\/a>`,
+      `Bán kính giao hàn hiện nay trong khu vực 5km. Mong quý khách thông cảm.`,
       `Chúng tôi dự trữ các bữa ăn tươi, cùng với đồ ăn nhẹ, đồ ăn, thực phẩm
       bổ sung, sinh tố, cà phê và trà.`
     ]

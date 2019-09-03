@@ -39,7 +39,7 @@ export default Vue.extend({
       documents
     };
   },
-  created() {
+  mounted() {
     if (process.client) {
       AOS.init();
     }
@@ -93,5 +93,12 @@ export default Vue.extend({
   padding: 3rem 1rem;
   background: black;
   color: white;
+}
+</style>
+
+<style>
+.end-text > p > a {
+  color: white;
+  border-bottom: solid 1px white;
 }
 </style>
