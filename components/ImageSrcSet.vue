@@ -8,16 +8,31 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     src: { type: String, required: true },
-    alt: { type: String, required: false }
+    srcArray: { type: Array, required: false },
+    srcs: { type: String, required: false },
+    alt: { type: String, required: false },
   },
   computed: {
     srcset() {
-      const n = this.src.split(".");
-      if (!["jpeg", "jpg", "png"].includes(n[2])) {
+      const lastDot = this.src.lastIndexOf(".");
+      const ext = this.src.slice(lastDot, this.src.length);
+      const name = this.src.slice(0, lastDot);
+      if (![".jpeg", ".jpg", ".png"].includes(ext)) {
         return "";
       }
-      return `${n[0]}@2x.${n[1]} 2x, ${n[0]}@3x.${n[1]} 3x`;
-    }
-  }
+      const srcs = this.srcs
+        ? this.srcs.split(",")
+        : this.srcArray
+        ? this.srcArray
+        : ["2x", "3x"];
+      const result = srcs
+        .reduce((acc, cur) => {
+          acc.push(`${name}@${cur}${ext} ${cur}`);
+          return acc;
+        }, [])
+        .join(", ");
+      return result;
+    },
+  },
 });
 </script>

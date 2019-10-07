@@ -1,5 +1,5 @@
 <template functional>
-  <div class="page-text">
+  <div class="page-text" :id="props.document.id">
     <div
       v-if="props.document.img"
       class="page--icon"
@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .page-text {
   padding: 4rem 1rem;
   text-align: center;
@@ -31,13 +31,17 @@
   h2 {
     padding: 3rem 0;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
+    color: #fd8003;
   }
   p {
-    margin: auto;
-    max-width: 700px;
+    margin: 1rem auto;
+    max-width: 600px;
     font-size: 1.36rem;
     font-weight: 300;
+    b {
+      font-weight: 500;
+    }
   }
 }
 </style>

@@ -9,7 +9,7 @@ export default {
     title,
     meta,
     link,
-    script
+    script,
   },
   /*
    ** Customize the progress-bar color
@@ -24,8 +24,9 @@ export default {
    */
   plugins: [
     "~/plugins/i18n.js",
+    { src: "~/plugins/vue-gallery.js", mode: "client" },
     "~/plugins/components.js",
-    "~/plugins/mixins.js"
+    "~/plugins/mixins.js",
   ],
   /*
    ** Nuxt.js dev-modules
@@ -34,34 +35,32 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    "@nuxtjs/google-analytics",
-    "@nuxtjs/style-resources",
-    "@nuxtjs/markdownit"
-  ],
+  modules: ["@nuxtjs/google-analytics", "@nuxtjs/style-resources"],
   googleAnalytics: {
-    id: "UA-ABCXYZ123"
+    id: "UA-104476806-2",
   },
   styleResources: {
-    scss: ["./assets/styles.scss"]
-  },
-  markdownit: {
-    use: [["markdown-it-container", "paralax"]]
+    scss: ["./assets/styles.scss"],
   },
   /*
    ** Router
    */
   router: {
-    middleware: "i18n"
+    middleware: "i18n",
   },
   /*
    ** Build configuration
    */
   build: {
-    vendor: ["vue-i18n"],
+    // vendor: ["vue-i18n"],
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.ya?ml$/,
+        use: "js-yaml-loader",
+      });
+    },
+  },
 };

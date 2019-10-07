@@ -1,0 +1,86 @@
+menus:
+  - link: \#about-us
+    text: Về chúng tôi
+  - link: \#menu
+    text: Thực đơn
+
+socials:
+  - link: https://www.instagram.com/mummfood
+    img: /img/instagram.svg
+  - link: https://facebook.com/mummfood
+    img: /img/facebook.svg
+  - link: tel:+84977399609
+    img: /img/phone.svg
+
+intro:
+  img: /logo.png
+  title: SỨC KHỎE, DỄ DÀNG, TƯƠI NGON
+  body:
+    - Tạo ra các bữa ăn bổ dưỡng bằng cách sử dụng toàn bộ thành phần thực
+      phẩm tươi ngon, hỗ trợ bạn trên hành trình sức khỏe của bạn.
+    - Ghé thăm cửa hàng của chúng tôi ở <b>Hoàng Văn Thái, Thanh Xuân, Hà Nội</b> hoặc
+      đặt hàng trực tuyến. Chúng tôi giao hàng đến các địa chỉ trong phạm vi 5km.
+
+head:
+  - Mumm cung cấp các phần ăn hàng tuần giúp bạn duy trì một lối sống khỏe.
+    Chúng tôi tập trung vào chế độ ăn cân bằng được thiết kế chuyên biệt để hỗ
+    trợ bạn kiểm soát cân nặng một cách hiệu quả nhất.
+  - Nếu bạn đang tìm kiếm những bữa ăn ngon và tốt cho sức khỏe được chuẩn bị
+    sẵn ở Hà Nội thì Mumm là một lựa chọn tối ưu. Thực đơn đa dạng với hơn 100
+    món của chúng tôi có thể giúp bạn thưởng thức mà không ngán trong hơn 1
+    tháng.
+
+order:
+  img: /leaves.png
+  title: ĐẶT HÀNG QUA ĐIỆN THOẠI HOẶC CHAT VỚI SHOP
+  body:
+    - Để chọn món ăn ưa thích quý khách vui lòng đặt set ăn trưa trước <b>4 giờ
+      chiều</b> hôm trước
+    - và set ăn tối trước <b>10 giờ sáng</b> hằng ngày
+
+link:
+  text: CHAT VỚI CHÚNG TÔI
+  to: https://m.me/mummfood
+  img: /img/fb-messenger.svg
+  blank: true
+
+phone:
+  text: "097 739 9609"
+  to: tel:+84977399609
+  img: /img/phone.svg
+  blank: true
+
+clean:
+  img: /img/background-1.jpg
+  title: THỰC PHẨM TƯƠI SẠCH
+
+gallery:
+  - title: BÒ CUỐN TORTILLA SỐT BƠ
+    href: /gallery/0.jpg
+  - title: BÒ OM TƯƠNG 
+    href: /gallery/1.jpg
+  - title: SET TRƯA SƯỜN RAM MẶN 
+    href: /gallery/2.jpg
+  - title: SET THỊT BA CHỈ KHO TÀU, TRỨNG CUỘN
+    href: /gallery/3.jpg
+  - title: MỰC NHỒI THỊT SỐT CÀ CHUA
+    href: /gallery/4.jpg
+  - title: CHÂN GIÒ GIẢ CẦY 
+    href: /gallery/5.jpg
+  - title: CÀ-RI GÀ 
+    href: /gallery/6.jpg
+  - title: CÁ HỒI ÁP CHẢO SỐT CHANH LEO
+    href: /gallery/7.jpg
+  - title: GÀ CHIÊN SỐT CAM 
+    href: /gallery/8.jpg
+  - title: GÀ OM NẤM ĐÔNG CÔ, KỶ TỬ 
+    href: /gallery/9.jpg
+  - title: SET TRƯA BÒ LÚC LẮC, CHẢ LÁ LỐT
+    href: /gallery/10.jpg
+  - title: SET TRƯA CÁ BÔNG KHO  
+    href: /gallery/11.jpg
+
+end:
+  - Cửa hàng của chúng tôi nằm tại 153 Hoàng Văn Thái, Thanh Xuân, Hà Nội.
+  - 'Số hotline: <a href="tel:+84977399609">0977 399 609</a>'
+  - Bán kính giao hàng hiện nay trong khu vực 5km. Mong quý khách thông cảm.

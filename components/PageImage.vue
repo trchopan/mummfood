@@ -1,5 +1,5 @@
 <template functional>
-  <div class="page-image">
+  <div class="page-image" :id="props.id">
     <div class="page-image__background">
       <ImageSrcSet :src="props.document.img" class="img" />
     </div>
@@ -39,9 +39,9 @@
     width: 100%;
   }
   h2 {
-    background: grey;
+    background: white;
     text-align: center;
-    color: white;
+    color: $primary-color;
     font-size: 4rem;
     font-weight: 300;
     max-width: 55rem;
